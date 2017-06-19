@@ -1,0 +1,67 @@
+span
+{
+    font-size: 25px !important;
+    padding:10px;
+}
+ul li
+{
+    display:inline !important;
+}
+li a
+{
+	display: inline !important;
+	font-size: 18px;
+    color: #000000 !important;
+    background-color: transparent;
+    text-decoration: none !important;
+    margin-top :20px !important;
+ }
+li a:hover
+{
+	border-bottom: 4px solid #e58e32;
+}
+#left
+{
+	margin-left: 100px !important;
+	z-index: 1 !important;
+}
+.prev
+{
+	float:left !important;
+}
+.pager .prev
+{
+	position: absolute;
+	top: 35%;
+    z-index: 5;
+    display: inline-block;
+    margin-top: -40px;
+    margin-left: -650px;
+    font-size: 20px !important;
+}
+.pager .next
+{
+	position: absolute;
+    top: 38%;
+    z-index: 5;
+    display: inline-block;
+    margin-top: -100px;
+    margin-left: 620px !important;
+}
+.pager .prev :hover ,.pager .next :hover
+{
+	cursor: pointer;
+}
+.pager li>a
+{
+    padding :25px 10px 25px 10px !important;
+	border-radius: 0px !important;
+}
+button
+{
+	margin-top: 10px !important;
+}
+.col-lg-3
+{
+	padding: 10px !important;
+}

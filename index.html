@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Tabs and Image Sliders">
+    <meta name="author" content="Madhu">
+	<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="./assets/css/bootstrap.min.css">
+	<script type="text/javascript" src="./assets/js/script.js"></script>
+</head>
+<body >
+<div class="container-fluid">
+  <div class="row column">
+    <ul>
+    	<li><a href="" class="links" onclick="event.preventDefault(); available(event,'imagetop')"><span>Available</span></a></li>
+    	<li><a href="" class="links" onclick="event.preventDefault(); available(event,'imagedown')"><span>upcoming</span></a></li>
+    </ul>
+ </div>
+ <hr>
+</div>
+<div>
+ <div class="top" id="imagetop" style="display: none;">
+  <div class="row topsliders">
+    <div class="col-lg-3 well">
+       <img src="./assets/images/image1.jpg"   alt="image" height="200" width="300">
+       <span><b>&#8377;2000&nbsp</b>Golden Ring</span><br>
+       <button class="btn btn-primary btn-lg">BUY NOW</button>
+    </div>
+    <div class="col-lg-3 well">
+       <img src="./assets/images/image2.jpg"   alt="image" height="200" width="300">
+       <span><b>&#8377;80&nbsp</b>Superman ring</span><br>
+       <button class="btn btn-primary btn-lg">BUY NOW</button>
+    </div>
+    <div class="col-lg-3 well">
+       <img src="./assets/images/image3.jpg"  alt="image" height="200" width="300">
+       <span><b>&#8377;250&nbsp</b>School bag</span><br>
+       <button class="btn btn-primary btn-lg">BUY NOW</button>
+    </div>
+    <div class="col-lg-3 well">
+       <img src="./assets/images/image4.jpg"  alt="image" height="200" width="300">
+       <span><b>&#8377;300&nbsp</b>Car charger</span><br>
+       <button class="btn btn-primary btn-lg">BUY NOW</button>
+    </div>
+  </div>
+  <div class="row topsliders">
+    <div class="col-lg-3 well">
+       <img src="./assets/images/ricecooker.jpeg"  alt="image" height="200" width="300">
+       <span><b>&#8377;1500&nbsp</b>Ricecooker</span><br>
+       <button class="btn btn-primary btn-lg">BUY NOW</button>
+    </div>
+    <div class="col-lg-3 well">
+       <img src="./assets/images/powerbank.jpg"  alt="image" height="200" width="300">
+       <span><b>&#8377;800&nbsp</b>Powerbank</span><br>
+       <button class="btn btn-primary btn-lg">BUY NOW</button>
+    </div>
+    <div class="col-lg-3 well">
+       <img src="./assets/images/router.jpeg"  alt="image" height="200" width="300">
+       <span><b>&#8377;1300&nbsp</b>Router</span><br>
+       <button class="btn btn-primary btn-lg">BUY NOW</button>
+    </div>
+    <div class="col-lg-3 well">
+       <img src="./assets/images/kitchenset.jpeg"  alt="image" height="200" width="300">
+       <span><b>&#8377;1500&nbsp</b>Kitchenset</span><br>
+       <button class="btn btn-primary btn-lg">BUY NOW</button>
+    </div>
+  </div>
+  <div class="row topsliders">
+    <div class="col-lg-3 well">
+       <img src="./assets/images/shoe.jpg"  alt="image" height="200" width="300">
+       <span><b>&#8377;400&nbsp</b>shoes</span><br>
+       <button class="btn btn-primary btn-lg">BUY NOW</button>
+    </div>
+    <div class="col-lg-3 well">
+       <img src="./assets/images/shoe1.jpg"  alt="image" height="200" width="300">
+       <span><b>&#8377;600&nbsp</b>Brownshoes</span><br>
+       <button class="btn btn-primary btn-lg">BUY NOW</button>
+    </div>
+   <div class="col-lg-3 well">
+       <img src="./assets/images/image6.jpg"  alt="image" height="200" width="300">
+       <span><b>&#8377;400&nbsp</b>Adapter</span><br>
+       <button class="btn btn-primary btn-lg">BUY NOW</button>
+   </div>
+   <div class="col-lg-3 well">
+       <img src="./assets/images/shirt.jpg"  alt="image" height="200" width="300">
+       <span><b>&#8377;200&nbsp</b>Tshirt</span><br>
+       <button class="btn btn-primary btn-lg">BUY NOW</button>
+   </div>
+  </div>
+  <ul class="pager">
+    <li class="prev"><a onclick="availableSlideImage(-1)">&#10094;</a></li>
+    <li class="next"><a onclick="availableSlideImage(1)">&#10095;</a></li>
+  </ul>
+</div>
+ <div class="top" id="imagedown" style="display:none ;">
+  <div class="row downsliders">
+   <div class="col-lg-3 well">
+       <img src="./assets/images/iphone.jpeg"   alt="image" height="200" width="300">
+       <span><b>&#8377;1200&nbsp</b>Iphonepanel</span><br>
+       <button class="btn btn-primary btn-lg">Available soon</button>
+   </div>
+  <div class="col-lg-3 well">
+       <img src="./assets/images/iphone1.jpeg"   alt="image" height="200" width="300">
+       <span><b>&#8377;25000&nbsp</b>Iphone 6x</span><br>
+       <button class="btn btn-primary btn-lg">Available soon</button>
+  </div>
+  <div class="col-lg-3 well">
+       <img src="./assets/images/iphone3.jpeg"  alt="image" height="200" width="300">
+       <span><b>&#8377;22000&nbsp</b>Iphone 5x</span><br>
+       <button class="btn btn-primary btn-lg">Available soon</button>
+  </div>
+  <div class="col-lg-3 well">
+       <img src="./assets/images/goggles.jpeg"  alt="image" height="200" width="300">
+       <span><b>&#8377;359&nbsp</b>Googles</span><br>
+       <button class="btn btn-primary btn-lg">Available soon</button>
+  </div>
+ </div>
+ <div class="row downsliders">
+   <div class="col-lg-3 well">
+       <img src="./assets/images/greentea.jpeg"  alt="image" height="200" width="300">
+       <span><b>&#8377;200&nbsp</b>Green tea</span><br>
+       <button class="btn btn-primary btn-lg">Available soon</button>
+   </div>
+   <div class="col-lg-3 well">
+       <img src="./assets/images/mouse.jpeg"  alt="image" height="200" width="300">
+       <span><b>&#8377;190&nbsp</b>Mouse</span><br>
+       <button class="btn btn-primary btn-lg">Available soon</button>
+  </div>
+  <div class="col-lg-3 well">
+       <img src="./assets/images/pendrive.jpeg"  alt="image" height="200" width="300">
+       <span><b>&#8377;400&nbsp</b>Pendrive</span><br>
+       <button class="btn btn-primary btn-lg">Available soon</button>
+  </div>
+   <div class="col-lg-3 well">
+       <img src="./assets/images/tshirt1.jpeg"  alt="image" height="200" width="300">
+       <span><b>&#8377;250&nbsp</b>Tshirt</span><br>
+       <button class="btn btn-primary btn-lg">Available soon</button>
+  </div>
+  </div>
+  <div class="row downsliders">
+    <div class="col-lg-3 well">
+       <img src="./assets/images/microwaveoven.jpeg"  alt="image" height="200" width="300">
+       <span><b>&#8377;5000&nbsp</b>Microwave oven</span><br>
+       <button class="btn btn-primary btn-lg">Available soon</button>
+     </div>
+    <div class="col-lg-3 well">
+       <img src="./assets/images/otgpendrive.jpeg"  alt="image" height="200" width="300">
+       <span><b>&#8377;500&nbsp</b>OTG Pendrive </span><br>
+       <button class="btn btn-primary btn-lg">Available soon</button>
+    </div>
+   <div class="col-lg-3 well">
+       <img src="./assets/images/gloves.jpg"  alt="image" height="200" width="300">
+       <span><b>&#8377;220&nbsp</b>Hand Gloves</span><br>
+       <button class="btn btn-primary btn-lg">Available soon</button>
+  </div>
+   <div class="col-lg-3 well">
+       <img src="./assets/images/mixy.jpeg"  alt="image" height="200" width="300">
+       <span><b>&#8377;3000&nbsp</b>Mixy</span><br>
+       <button class="btn btn-primary btn-lg">Available soon</button>
+   </div>
+ </div>
+   <ul class="pager">
+      <li class="prev"><a onclick="upcomeSlideImage(-1)">&#10094;</a></li>
+      <li class="next"><a onclick="upcomeSlideImage(1)">&#10095;</a></li>
+   </ul>
+ </div>
+</body>
+</html>
