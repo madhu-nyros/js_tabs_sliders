@@ -1,5 +1,5 @@
 //function for products which are in available and upcoming
-function available(evnt, image)
+function available(event, image)
 {
    var i, images, link;
    var images = document.getElementsByClassName("top");
@@ -8,13 +8,13 @@ function available(evnt, image)
    {
      images[i].style.display = "none";
    }
-   var link = document.getElementsByClassName("links");
+   var link = document.getElementsByClassName("link");
    for (i = 0; i < link.length; i++)
    {
-     link[i].className = link[i].className.replace(" active", "");
+     link[i].className = link[i].className.replace("active", "");
    }
     document.getElementById(image).style.display = "block";
-    evnt.currentTarget.className += " active";
+    event.currentTarget.className += "active";
     topslide(1);
     downslide(1);
 }
@@ -68,3 +68,5 @@ function downslide(k)
   l[Index-1].style.display = "block";
 }
 //slider ending for upcoming
+
+

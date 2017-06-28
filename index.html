@@ -1,31 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>tabs and sliders</title>
-	<meta charset="utf-8">
+	  <title>tabs and sliders</title>
+	  <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Tabs and Image Sliders">
     <meta name="author" content="Madhu">
-	<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
-	<link rel="stylesheet" type="text/css" href="./assets/css/bootstrap.min.css">
-	<script type="text/javascript" src="./assets/js/script.js"></script>
+	  <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+	  <link rel="stylesheet" type="text/css" href="./assets/css/bootstrap.min.css">
+	  <script type="text/javascript" src="./assets/js/script.js"></script>
 </head>
-<body >
+<body onload="available(event,'imagetop')">
 <div class="container-fluid">
+<!-- change -->
   <div class="row column">
-    <ul>
-    	<li><a href="" class="links" onclick="event.preventDefault(); available(event,'imagetop')"><span>Available</span></a></li>
-    	<li><a href="" class="links" onclick="event.preventDefault(); available(event,'imagedown')"><span>upcoming</span></a></li>
-    </ul>
+    <button  class="link active" onclick="available(event,'imagetop')">Available</button>
+    <button  class="link active" onclick=" available(event,'imagedown')">Upcoming</button>
  </div>
  <hr>
 </div>
 <div>
- <div class="top" id="imagetop" style="display: none;">
-  <div class="row topsliders">
+ <div class="top" id="imagetop">
+  <div class="row topsliders" style="display: none;">
     <div class="col-lg-3 well">
        <img src="./assets/images/image1.jpg"   alt="image" height="200" width="300">
-       <span><b>&#8377;2000&nbsp</b>Golden Ring</span><br>
+       <span><b>&#8377;2000&nbsp</b>Gold Ring</span><br>
        <button class="btn btn-primary btn-lg">BUY NOW</button>
     </div>
     <div class="col-lg-3 well">
