@@ -3,11 +3,16 @@ span
     font-size: 16px !important;
     padding:10px;
 }
+.well
+{
+    padding-left :70px !important;
+    padding-right:70px !important;
+}
 ul li
 {
     display:inline !important;
 }
-div button
+div #click
 {
     font-size: 17px;
     color: #000000 !important;
@@ -17,15 +22,15 @@ div button
     outline: none;
     cursor: pointer;
 }
-.row button:hover
+.row #click:hover
 {
     text-decoration: none;
-    border-bottom: 4px solid #e58e32 !important;
+    border-bottom: 4px solid red !important;
 }
- .row button.link.active
+ .row #click.link.active
 {
-    color:blue !important;
-    border-bottom: 4px solid #e58e32 !important;
+    color:red !important;
+    border-bottom: 4px solid red !important;
 }
 #left
 {
@@ -42,8 +47,8 @@ div button
 	top: 35%;
     z-index: 5;
     display: inline-block;
-    margin-top: -40px;
-    margin-left: -650px;
+    margin-top: -10px;
+    margin-left: -660px;
 }
 .pager .next
 {
@@ -51,8 +56,8 @@ div button
     top: 45%;
     z-index: 5;
     display: inline-block;
-    margin-top: -100px;
-    margin-left: 620px !important;
+    margin-top: -70px;
+    margin-left: 635px !important;
 }
 .pager .prev :hover ,.pager .next :hover
 {
@@ -70,4 +75,7 @@ button
 .col-lg-3
 {
 	padding: 10px !important;
+    height:300px;
+    width:300px;
 }
+
