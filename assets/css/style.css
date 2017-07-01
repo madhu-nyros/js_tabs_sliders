@@ -8,11 +8,7 @@ span
     padding-left :70px !important;
     padding-right:70px !important;
 }
-ul li
-{
-    display:inline !important;
-}
-div #click
+div #click,#click2
 {
     font-size: 17px;
     color: #000000 !important;
@@ -22,12 +18,12 @@ div #click
     outline: none;
     cursor: pointer;
 }
-.row #click:hover
+.row #click:hover ,#click2:hover
 {
     text-decoration: none;
     border-bottom: 4px solid red !important;
 }
- .row #click.link.active
+ .row #click.link.active ,.row #click2.link.active
 {
     color:red !important;
     border-bottom: 4px solid red !important;
@@ -37,27 +33,24 @@ div #click
 	margin-left: 100px !important;
 	z-index: 1 !important;
 }
-.prev
-{
-	float:left !important;
-}
 .pager .prev
 {
 	position: absolute;
+    display: inline;
+    float:left;
 	top: 35%;
     z-index: 5;
-    display: inline-block;
     margin-top: -10px;
-    margin-left: -660px;
+    right:97%;
 }
 .pager .next
 {
-	position: absolute;
-    top: 45%;
+	position: fixed;
+    display: inline;
+    float:right;
+    top: 35%;
     z-index: 5;
-    display: inline-block;
-    margin-top: -70px;
-    margin-left: 635px !important;
+    left:97%;
 }
 .pager .prev :hover ,.pager .next :hover
 {

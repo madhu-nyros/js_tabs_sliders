@@ -3,7 +3,6 @@ function available(event, image)
 {
    var i, images, link;
    var images = document.getElementsByClassName("top");
-
    for (i = 0; i < images.length; i++)
    {
      images[i].style.display = "none";
@@ -11,6 +10,7 @@ function available(event, image)
    var link = document.getElementsByClassName("link");
    for (i = 0; i < link.length; i++)
    {
+
      link[i].className = link[i].className.replace("active", "");
    }
     document.getElementById(image).style.display = "block";
@@ -68,5 +68,4 @@ function downslide(k)
   l[Index-1].style.display = "block";
 }
 //slider ending for upcoming
-
-
+document.getElementById("click").className +="active";
